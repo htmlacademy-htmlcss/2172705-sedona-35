@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Роман Пронин](https://up.htmlacademy.ru/htmlcss/35/user/2172705).в
+* Студент: [Роман Пронин](https://up.htmlacademy.ru/htmlcss/35/user/2172705).
 * Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
