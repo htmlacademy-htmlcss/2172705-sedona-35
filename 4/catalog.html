@@ -23,7 +23,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" title="Текущая страница">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list user-navigation">
@@ -33,7 +33,7 @@
               </a>
             </li>
             <li class="user-navigation-item">
-              <a class="user-navigation-link-favourites" href="#">
+              <a class="user-navigation-link-favorites" href="#">
                 <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
@@ -49,7 +49,7 @@
             <h1 class="catalog-hotels-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link link-main-page" href="index.html">
                   <span class="visually-hidden">Главная.</span>
                 </a>
               </li>
@@ -107,11 +107,11 @@
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="control">
-                  <input class="control-input left-control-input" type="number" min="0" max="9000" value="0">
+                  <input class="control-input left-control-field" type="number" min="0" max="9000" value="0">
                   <span class="control-input-label">от</span>
                 </label>
                 <label class="control">
-                  <input class="control-input right-control-input" type="number" min="0" max="9000" value="9000">
+                  <input class="control-input right-control-field" type="number" min="0" max="9000" value="9000">
                   <span class="control-input-label">до</span>
                 </label>
               </fieldset>
@@ -136,17 +136,17 @@
             </select>
             <ul class="sorting-controls-list">
               <li class="sorting-controls-item view-button sorting-controls-item-current">
-                <a class="sorting-controls-link">
+                <a class="sorting-controls-link view-table" href="#">
                   <span class="visually-hidden">Показать таблицу карточек.</span>
                 </a>
               </li>
               <li class="sorting-controls-item view-button">
-                <a class="sorting-controls-link">
+                <a class="sorting-controls-link view-card" href="#">
                   <span class="visually-hidden">Показать одну карточку.</span>
                 </a>
               </li>
               <li class="sorting-controls-item view-button">
-                <a class="sorting-controls-link">
+                <a class="sorting-controls-link view-list" href="#">
                   <span class="visually-hidden">Показать список карточек.</span>
                 </a>
               </li>
@@ -204,7 +204,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item pagination-item-current">
-              <a class="pagination-link pagination-link-current" href="#">1</a>
+              <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -229,7 +229,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-label">
               <span class="visually-hidden">Ваш e-mail.</span>
-              <input class="form-input-mail" type="email" name="form-input-mail" placeholder="Ваш e-mail">
+              <input class="newsletter-form-input-mail" type="email" name="form-input-mail" placeholder="Ваш e-mail">
             </label>
             <button class="newsletter-form-button button button-blue" type="submit">Подписаться</button>
           </form>
@@ -238,17 +238,17 @@
       <footer class="footer">
         <ul class="socials-list">
           <li class="socials-item">
-            <a class="socials-link" href="https://vk.com/htmlacademy">
+            <a class="socials-link link-vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте.</span>
             </a>
           </li>
           <li class="socials-item">
-            <a class="socials-link" href="https://t.me/htmlacademy">
+            <a class="socials-link link-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
           <li class="socials-item">
-            <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="socials-link link-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube.</span>
             </a>
           </li>
