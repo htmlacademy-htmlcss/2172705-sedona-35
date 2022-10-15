@@ -45,7 +45,7 @@ body {
 }
 
 .button {
-  border-radius: 4px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -53,7 +53,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-family: inherit;
+  border-radius: 4px;
 }
 
 .button-brown {
@@ -244,11 +244,12 @@ body {
 }
 
 .newsletter-form-input-mail {
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
-  font-family: inherit;
+  border-radius: 4px 0 0 4px;
+  border: none;
 }
 
 .newsletter.with-background {
@@ -339,11 +340,12 @@ body {
 }
 
 .control-input {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
-  font-family: inherit;
+  border: none;
 }
 
 .control-input-label {
@@ -383,11 +385,11 @@ body {
 }
 
 .select-control {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  font-family: inherit;
 }
 
 .sorting-controls-list {
