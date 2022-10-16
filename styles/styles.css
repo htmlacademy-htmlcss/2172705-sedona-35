@@ -209,8 +209,8 @@ body {
 .advantages-card-content {
   box-sizing: border-box;
   width: 400px;
-  text-align: center;
   padding: 92px 85px 111px;
+  text-align: center;
   background-color: #82b3d3;
 }
 
@@ -242,8 +242,8 @@ body {
 .advantages-item {
   box-sizing: border-box;
   width: 400px;
-  text-align: center;
   padding: 103px 85px 121px;
+  text-align: center;
 }
 
 .advantages-item-title {
@@ -277,8 +277,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
   text-align: center;
+  color: #000000;
 }
 
 .hotel-search-description {
@@ -304,15 +304,15 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }
 
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
 }
 
 .newsletter-form-input-mail {
@@ -380,9 +380,9 @@ body {
 
 .catalog-filter-group {
   min-width: 150px;
-  border: none;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .catalog-filter-group-infrastructure {
