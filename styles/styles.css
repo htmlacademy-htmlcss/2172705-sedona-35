@@ -1134,8 +1134,8 @@ body {
   flex-direction: column;
   padding: 20px;
 
-  outline: 1px solid #e6e6e6;
   border-radius: 4px;
+  outline: 1px solid #e6e6e6;
 }
 
 .hotels-image {
