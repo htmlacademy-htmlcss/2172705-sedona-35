@@ -604,7 +604,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: inherit;
-  text-indent: 20px;
+  padding-left: 20px;
 
   background-color: #f2f2f2;
   border: none;
@@ -841,12 +841,13 @@ body {
   margin-bottom: 44px;
 }
 
-.catalog-filter-group-price .control-input {
+.control-price .control-input {
   width: 143px;
   height: 48px;
   padding: 0;
 
-  text-indent: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
 .catalog-filter-group-price .control-input:hover {
