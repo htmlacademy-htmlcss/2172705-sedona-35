@@ -114,7 +114,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-label">
               <span class="visually-hidden">Ваш e-mail.</span>
-              <input class="newsletter-form-input-mail" type="email" name="form-input-mail" placeholder="Ваш e-mail">
+              <input class="newsletter-form-input-mail" type="email" name="form-input-mail" placeholder="Ваш e-mail" required>
             </label>
             <button class="newsletter-form-button button button-blue" type="submit">Подписаться</button>
           </form>
@@ -156,6 +156,7 @@
           </a>
         </div>
       </footer>
+      <!-- Для показа формы с элемента <div> класса 'modal-container' необходимо снять класс 'modal-container-close' -->
       <div class="modal-container modal-container-close">
         <div class="modal-auth">
           <button class="modal-close-button">
@@ -167,57 +168,63 @@
           <section class="modal-content">
             <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
             <form class="modal-content-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="modal-content-label" for="arrival-date">Дата заезда:</label>
-              <div class="modal-content-input-container">
-                <input class="modal-content-input modal-content-input-long" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+              <!-- Для показа элемента <span> класса 'error-message' необходимо снять класс 'error-message-hide' с элемента <div> класса 'modal-content-container' -->
+              <div class="modal-content-container error-message-hide">
+                <label class="modal-content-label" for="arrival-date">Дата заезда:</label>
+                <input class="modal-content-input" type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+                <span class="modal-content-message error-message">Мы не можем отправить вас в прошлое.</span>
               </div>
-              <span class="modal-content-message error-message error-message-hide">Мы не можем отправить вас в прошлое.</span>
-              <label class="modal-content-label" for="departure-date">Дата выезда:</label>
-              <div class="modal-content-input-container">
-                <input class="modal-content-input modal-content-input-long" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+              <!-- Для показа элемента <span> класса 'info-message' необходимо снять класс 'info-message-hide' с элемента <div> класса 'modal-content-container' -->
+              <div class="modal-content-container info-message-hide">
+                <label class="modal-content-label" for="departure-date">Дата выезда:</label>
+                <input class="modal-content-input" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
+                <span class="modal-content-message info-message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
-              <span class="modal-content-message info-message info-message-hide">На эти даты есть свободные номера. Пока есть.</span>
-              <label class="modal-content-label" for="number-adults">Взрослые:</label>
-              <div class="modal-content-value-container modal-content-value-container-adults">
-                <button class="modal-content-value-button value-down" type="button">
-                  <svg class="modal-content-value-button-image" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0v2h14V0H0Z"/>
-                  </svg>
-                  <span class="visually-hidden">Уменьшить.</span>
-                </button>
-                <input class="modal-content-input" type="number" name="number-adults" id="number-adults" min="0" value="2">
-                <button class="modal-content-value-button value-up" type="button">
-                  <svg class="modal-content-value-button-image" width="14" height="14" viewBox="0 0 14 14" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
-                  </svg>
-                  <span class="visually-hidden">Увеличить.</span>
-                </button>
-              </div>
-              <div class="modal-content-label-container">
-                <label class="modal-content-label" for="number-kids">Дети:</label>
-                <span class="modal-content-tooltip">
-                  <button class="modal-content-tooltip-button" type="button" aria-labelledby="tooltip-value-kids">
-                    <svg width="2" height="12" viewBox="0 0 2 12" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z"/>
-                    </svg>
-                  </button>
-                  <span class="modal-content-tooltip-text" role="tooltip" id="tooltip-value-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-              </div>
-              <div class="modal-content-value-container modal-content-value-container-kids">
-                <button class="modal-content-value-button value-down" type="button">
-                  <svg class="modal-content-value-button-image" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0v2h14V0H0Z"/>
-                  </svg>
-                  <span class="visually-hidden">Уменьшить.</span>
-                </button>
-                <input class="modal-content-input" type="number" name="number-kids" id="number-kids" min="0" value="2">
-                  <button class="modal-content-value-button value-up" type="button">
-                    <svg class="modal-content-value-button-image" width="14" height="14" viewBox="0 0 14 14" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
-                    </svg>
-                    <span class="visually-hidden">Увеличить.</span>
-                  </button>
+              <div class="modal-content-container no-calendar">
+                <div class="modal-content-container-guests">
+                  <label class="modal-content-label" for="number-adults">Взрослые:</label>
+                  <div class="modal-content-container-value">
+                    <button class="modal-content-value-button value-down" type="button">
+                      <svg width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0v2h14V0H0Z"/>
+                      </svg>
+                      <span class="visually-hidden">Уменьшить.</span>
+                    </button>
+                    <input class="modal-content-input modal-content-input-value" type="text" name="number-adults" id="number-adults" value="2" required>
+                    <button class="modal-content-value-button value-up" type="button">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                      </svg>
+                      <span class="visually-hidden">Увеличить.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="modal-content-container-guests modal-content-container-kids">
+                  <label class="modal-content-label" for="number-kids">Дети:</label>
+                  <span class="modal-content-tooltip">
+                    <button class="modal-content-tooltip-button" type="button" aria-labelledby="tooltip-value-kids">
+                      <svg width="2" height="12" viewBox="0 0 2 12" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z"/>
+                      </svg>
+                    </button>
+                    <span class="modal-content-tooltip-text" role="tooltip" id="tooltip-value-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <div class="modal-content-container-value">
+                    <button class="modal-content-value-button value-down" type="button">
+                      <svg width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0v2h14V0H0Z"/>
+                      </svg>
+                      <span class="visually-hidden">Уменьшить.</span>
+                    </button>
+                    <input class="modal-content-input modal-content-input-value" type="text" name="number-kids" id="number-kids" value="2" required>
+                    <button class="modal-content-value-button value-up" type="button">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="#756157" fill-opacity=".3" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                      </svg>
+                      <span class="visually-hidden">Увеличить.</span>
+                    </button>
+                  </div>
+                </div>
               </div>
               <button class="modal-content-find-button" type="submit">Найти</button>
             </form>
