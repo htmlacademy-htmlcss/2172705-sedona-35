@@ -65,7 +65,7 @@ body {
 }
 
 .button {
-  padding: 8px 50px;
+  padding: 8px;
 
   font-weight: 700;
   font-size: 16px;
@@ -175,8 +175,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Для включения неактивного состояния кнопки с прозрачным фоном, необходимо добавить класс 'button-transparent-disabled' к элементу <a> класса 'button-transparent' */
-.button-transparent-disabled {
+.button-transparent:disabled {
   color: rgba(255, 255, 255, 0.1);
 
   cursor: default;
@@ -184,8 +183,7 @@ body {
   pointer-events: none;
 }
 
-/*Для включения неактивного состояния кнопки, необходимо добавить класс 'button-disabled' к элементу <a> класса 'button' */
-.button-disabled {
+.button:disabled {
   color: #ffffff;
 
   background-color: #e5e5e5;
@@ -345,7 +343,9 @@ body {
 }
 
 .user-navigation-link-want {
-  padding: 8px 34px;
+  width: 160px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .hero {
@@ -509,14 +509,14 @@ body {
 }
 
 .advantages-item.advantages-item-housing::before {
-  content: url(../images/housing.svg);
+  content: url("../images/housing.svg");
 
   width: 75px;
   height: 72px;
 }
 
 .advantages-item.advantages-item-food::before {
-  content: url(../images/food.svg);
+  content: url("../images/food.svg");
 
   width: 74px;
   height: 70px;
@@ -524,7 +524,7 @@ body {
 }
 
 .advantages-item.advantages-item-souvenirs::before {
-  content: url(../images/souvenirs.svg);
+  content: url("../images/souvenirs.svg");
 
   width: 64px;
   height: 76px;
@@ -566,6 +566,7 @@ body {
 
 .hotel-search-link {
   display: inline-block;
+  width: 376px;
 
   font-size: 20px;
   line-height: 36px;
@@ -600,6 +601,7 @@ body {
 }
 
 .newsletter-form-button {
+  width: 232px;
   font-size: 20px;
   line-height: 36px;
 
@@ -761,7 +763,7 @@ body {
 }
 
 .catalog-filter-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .control {
@@ -967,8 +969,8 @@ body {
 .catalog-filter-buttons-container {
   display: flex;
   flex-direction: column;
-  align-self: end;
-  max-width: 191px;
+  width: 191px;
+  margin-top: 56px;
 }
 
 .catalog-filter-buttons-submit {
@@ -978,17 +980,17 @@ body {
 .catalog-main {
   display: flex;
   flex-direction: column;
-  padding: 50px 70px 52px;
+  padding: 50px 70px 60px;
 }
 
 .catalog-sorting {
   display: flex;
-  align-items: center;
   margin-bottom: 40px;
 }
 
 .catalog-search-result {
-  margin: 0 auto 0 0;
+  display: block;
+  margin: 6px 30px 0 0;
 
   font-weight: 700;
   font-size: 30px;
@@ -998,9 +1000,10 @@ body {
 }
 
 .select-control {
-  width: 292px;
+  min-width: 292px;
   height: 49px;
   margin-right: 70px;
+  margin-left: auto;
 
   font-size: 18px;
   line-height: 21px;
@@ -1161,7 +1164,7 @@ body {
 
 .hotels-item-content {
   display: grid;
-
+  margin-top: auto;
   gap: 16px 20px;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: min-content minmax(36px, min-content) minmax(37px, min-content);
@@ -1211,8 +1214,9 @@ body {
 }
 
 .pagination {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: 8px;
   margin: 0;
   padding: 0;
 
@@ -1225,9 +1229,6 @@ body {
   align-items: center;
   min-width: 60px;
   min-height: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 8px;
 
   font-weight: 700;
   font-size: 20px;
@@ -1237,10 +1238,6 @@ body {
 
   background-color: #82b3d3;
   border-radius: 4px;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .pagination-link:hover:not(.pagination-link-current):not(.pagination-link-divider) {
@@ -1286,15 +1283,10 @@ body {
 }
 
 .page-footer {
-  margin-top: auto;
-  padding: 40px 70px 30px;
-}
-
-.page-footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5px 0;
+  margin-top: auto;
+  padding: 45px 70px 35px;
 }
 
 .socials-list {
@@ -1344,6 +1336,10 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.page-footer-academy-link {
+  margin-top: 3px;
 }
 
 .page-footer-phone-link:hover {
