@@ -622,6 +622,10 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.newsletter-form-input-mail::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .newsletter-form-input-mail:hover {
   background-color: #e6e6e6;
 }
@@ -705,9 +709,25 @@ body {
 }
 
 .breadcrumbs-link {
+  position: relative;
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.breadcrumbs-link::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.breadcrumbs-link-home::before {
+  height: 120%;
+  width: 200%;
 }
 
 .breadcrumbs-link:hover {
@@ -1013,6 +1033,7 @@ body {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 
@@ -1444,7 +1465,7 @@ body {
 }
 
 .modal-content-title {
-  margin: 0 0 64px 0;
+  margin: 0 50px 64px 0;
 
   font-weight: 700;
   font-size: 30px;
@@ -1498,6 +1519,10 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
+}
+
+.modal-content-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content-message {
