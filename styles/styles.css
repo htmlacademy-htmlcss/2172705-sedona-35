@@ -623,11 +623,8 @@ body {
 }
 
 .newsletter-form-input-mail::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.newsletter-form-input-mail::-moz-placeholder {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
+  opacity: 0.6;
 }
 
 .newsletter-form-input-mail:hover {
@@ -1526,11 +1523,8 @@ body {
 }
 
 .modal-content-input::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.modal-content-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
+  opacity: 0.6;
 }
 
 .modal-content-message {
